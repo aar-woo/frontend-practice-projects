@@ -1,0 +1,28 @@
+.app-drawer {
+    width: 13rem;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.nav-list {
+    color: gray;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.nav-list > li {
+    padding: 0.8rem 0;
+}
+
+.close-btn-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    margin-right: 1rem;
+}

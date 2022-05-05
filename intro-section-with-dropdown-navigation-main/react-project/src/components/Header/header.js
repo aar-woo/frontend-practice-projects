@@ -15,11 +15,9 @@ export default function Header(props) {
                 </ul>
             </div>
             <div className="col-half button-list">
-                <div className="bars-icon">
-                    <i className="fa-solid fa-bars fa-lg hide"></i>
-                    <button className="btn btn-login">Login</button>
-                    <button className="btn btn-register">Register</button>
-                </div>  
+                <i className="fa-solid fa-bars fa-lg hide"></i>
+                <button className="btn btn-login">Login</button>
+                <button className="btn btn-register">Register</button>
             </div>
         </div>
     )
