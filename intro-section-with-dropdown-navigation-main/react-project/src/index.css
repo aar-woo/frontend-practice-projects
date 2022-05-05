@@ -46,3 +46,7 @@ code {
 .justfiy-between {
   justify-content: space-between;
 }
+
+.hide {
+  display: none;
+}
