@@ -1,0 +1,42 @@
+.header {
+    margin: 1rem;
+    align-items: flex-end;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.button-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-login {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    margin-right: 2rem;
+}
+
+.btn-register {
+    height: auto;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    padding: 0.6rem 1rem;
+}
+
+
