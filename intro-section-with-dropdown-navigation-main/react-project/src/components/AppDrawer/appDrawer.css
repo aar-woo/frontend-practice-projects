@@ -1,10 +1,38 @@
 .app-drawer {
-    width: 13rem;
+    width: 60%;
     height: 100vh;
-    border: 1px solid black;
+    background-color: white;
+    border-left: 1px solid black;
     position: absolute;
     right: 0px;
     top: 0px;
+}
+
+.show-drawer {
+    transition: transform 0.4s;
+}
+
+.hide-drawer {
+    box-shadow: none;
+    transform: translateX(20rem);
+    transition: transform 0.4s;
+  }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    transition: opacity 500ms ease;
+}
+
+.hide-overlay {
+    opacity: 0;
+    transition-property: opacity 0.5s;
 }
 
 .nav-list {
@@ -25,4 +53,28 @@
 
 .close-btn {
     margin-right: 1rem;
+}
+
+.btn-list-drawer {
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-login-drawer {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.btn-register-drawer {
+    height: auto;
+    color: grey;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 0.7rem;
+    padding: 0.6rem;
+    margin-top: 1rem;
 }

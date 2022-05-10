@@ -1,7 +1,7 @@
 import "./header.css"
 
 export default function Header(props) {
-
+    const {handleDrawer} = props;
     return (
         <div className="row">
 
@@ -15,7 +15,7 @@ export default function Header(props) {
                 </ul>
             </div>
             <div className="col-half button-list">
-                <i className="fa-solid fa-bars fa-lg hide"></i>
+                <a onClick={handleDrawer}><i className="fa-solid fa-bars fa-lg hide"></i></a>
                 <button className="btn btn-login">Login</button>
                 <button className="btn btn-register">Register</button>
             </div>
