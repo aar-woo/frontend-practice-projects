@@ -16,7 +16,7 @@ export default function AppDrawer(props) {
         <div className={shadeClass} onClick={handleDrawer}></div>
         <div className={drawerClass}>
             <div className="row close-btn-row">
-                <a href="#here" onClick={handleDrawer}><i className="fa-solid fa-x fa-2xl close-btn"></i></a>
+                <a href="#" onClick={handleDrawer}><i className="fa-solid fa-x fa-2xl close-btn"></i></a>
             </div> 
             <div className="row">
                 <ul className="nav-list">

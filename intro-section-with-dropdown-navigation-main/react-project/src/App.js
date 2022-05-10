@@ -8,9 +8,10 @@ import {useState} from 'react';
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const setDrawerState = () => {
-    console.log('menu clicked')
-
+  const setDrawerState = (event) => {
+    if (!drawerOpen && event.target.matches('.overlay')) {
+      return;
+    }
     setDrawerOpen(!drawerOpen);
   }
 

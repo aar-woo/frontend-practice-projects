@@ -33,6 +33,7 @@
 .hide-overlay {
     opacity: 0;
     transition-property: opacity 0.5s;
+    position: relative;
 }
 
 .nav-list {
