@@ -13,7 +13,6 @@
 }
 
 .hide-drawer {
-    box-shadow: none;
     transform: translateX(20rem);
     transition: transform 0.4s;
   }
@@ -78,4 +77,15 @@
     border-radius: 0.7rem;
     padding: 0.6rem;
     margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 375px) {
+    .app-drawer {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
 }

@@ -4,7 +4,6 @@ export default function Header(props) {
     const {handleDrawer} = props;
     return (
         <div className="row">
-
             <div className="col-half margin-one header">
                 <ul className="header-list">
                     <span className="logo">snap</span>

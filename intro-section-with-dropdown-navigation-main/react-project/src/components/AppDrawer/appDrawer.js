@@ -3,7 +3,7 @@ import "./appDrawer.css"
 export default function AppDrawer(props) {
     const {handleDrawer, drawerState} = props;
 
-    let drawerClass = 'app-drawer hide-drawer';
+    let drawerClass = 'app-drawer hide-drawer hide';
     let shadeClass = 'overlay hide-overlay';
     if (drawerState) {
         drawerClass = 'app-drawer show-drawer';
