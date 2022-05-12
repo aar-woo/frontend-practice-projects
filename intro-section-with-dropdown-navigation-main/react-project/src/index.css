@@ -46,6 +46,14 @@ a {
   flex-basis: 50%;
 }
 
+.col-two-thirds {
+  flex-basis: calc(100%/3 * 2) ;
+}
+
+.col-one-third {
+  flex-basis: calc(100% / 3);
+}
+
 .flex-center {
   display: flex;
   justify-content: center;

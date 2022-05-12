@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/header';
 import AppDrawer from './components/AppDrawer/appDrawer';
 import {useState} from 'react';
+import Hero from './components/Hero/hero';
 
 
 function App() {
@@ -17,8 +18,13 @@ function App() {
 
   return (
     <>
-      <Header handleDrawer={setDrawerState} />
-      <AppDrawer handleDrawer={setDrawerState} drawerState={drawerOpen}/>
+      <div className='page'>
+        <div className='container'>
+          <Header handleDrawer={setDrawerState} />
+          <AppDrawer handleDrawer={setDrawerState} drawerState={drawerOpen}/>
+          <Hero />
+        </div>
+      </div>
     </>
   );
 }
