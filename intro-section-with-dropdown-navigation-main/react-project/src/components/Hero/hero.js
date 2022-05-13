@@ -13,6 +13,7 @@ export default function Hero(props) {
                 <div className="col-half hero-text-desktop">
                     <h1>Make remote work</h1>
                     <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                    <button className="btn-learn-more">Learn more</button>
                 </div>
                 <div className="col-half img-container">
                     <img src={heroMobile} className="hero-mobile"></img>

@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: grey;
+    font-size: 5rem;
 }
 
 .logo {
@@ -14,12 +16,14 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .button-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    color: grey;
 }
 
 .btn-login {
@@ -32,10 +36,11 @@
 .btn-register {
     height: auto;
     background-color: transparent;
-    border: 1px solid black;
+    border: 2px solid grey;
     border-radius: 0.7rem;
     padding: 0.6rem 1rem;
     margin-right: 1rem;
+    color: grey;
 }
 
 @media screen and (max-width: 375px) {
