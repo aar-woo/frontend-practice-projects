@@ -26,6 +26,11 @@ ul {
 
 a {
   color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .row,
