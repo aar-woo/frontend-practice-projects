@@ -20,13 +20,18 @@
 .hero-text-desktop > h1 {
     font-size: 1.8rem;
     font-weight: 700;
-    margin: 1.3rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 p {
     color: grey;
     padding: 0 1rem;
     line-height: 1.4;
+}
+
+li {
+    list-style: none;
 }
 
 .btn-learn-more {
@@ -39,6 +44,22 @@ p {
     margin: 1.7rem;
 }
 
+.logos-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logos-container img {
+    width: 3.5rem;
+}
+
+#audiophile-img {
+    width: 3rem;
+}
+
 
 @media screen and (min-width: 375px) {
     .hero-mobile {
@@ -47,12 +68,13 @@ p {
 
     .hero-desktop {
         display: flex;
-        width: 75%;
+        width: 100%;
         margin: 2rem;
     }
 
     .hero-row {
         flex-direction: row;
+        width: 90%;
     }
 
     .img-container {
@@ -64,8 +86,8 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 15%;
-        margin-right: 1rem;
+        margin-left: 10%;
+        margin-right: 5rem;
     }
 
     .hero-text-desktop > h1 {
@@ -86,8 +108,11 @@ p {
 
     .btn-learn-more {
         align-self: flex-start;
-        margin: 0;
-        margin-top: 1.7rem;
+        margin: 1.7rem 0 3rem 0;
+    }
+
+    .logos-container {
+        padding: 1rem 0;
     }
 
 }

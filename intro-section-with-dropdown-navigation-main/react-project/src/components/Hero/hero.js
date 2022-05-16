@@ -1,8 +1,10 @@
 import "./hero.css"
 import heroMobile from '../../images/image-hero-mobile.png'
 import heroDesktop from '../../images/image-hero-desktop.png'
-import ClientBiz from '../../images/client-databiz.svg';
-import { useMediaQuery } from 'react'
+import clientBiz from '../../images/client-databiz.svg';
+import audiophile from '../../images/client-audiophile.svg';
+import meet from '../../images/client-meet.svg';
+import maker from '../../images/client-maker.svg';
 
 export default function Hero(props) {
     
@@ -14,11 +16,17 @@ export default function Hero(props) {
                     <h1>Make remote work</h1>
                     <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
                     <button className="btn-learn-more">Learn more</button>
+                    <div className="logos-container">
+                        <img src={clientBiz} />
+                        <img src={audiophile}  id="audiophile-img" />
+                        <img src={meet} />
+                        <img src={maker} />
+                    </div>
                 </div>
+                
                 <div className="col-half img-container">
                     <img src={heroMobile} className="hero-mobile"></img>
                     <img src={heroDesktop} className="hero-desktop"></img>
-                    {/* <img src={ClientBiz} /> how you can use svg in react */}
                 </div>
             </div>
         </div>
