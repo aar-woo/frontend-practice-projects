@@ -5,7 +5,7 @@ export default function ProfileCard() {
         <div className={styles.profCard}>
             <div className={`${styles.profBg} row w-100 m-0`}>
                 <div className="col-4 p-3" >
-                    <img src={JeremyProf} className="w-100 border rounded-circle "/>  
+                    <img src={JeremyProf} className="w-100 border border-3 rounded-circle" />  
                 </div>
                 <div className="col-8 d-flex flex-column align-items-start justify-content-center" >
                     <p className="m-0">Report for</p>
