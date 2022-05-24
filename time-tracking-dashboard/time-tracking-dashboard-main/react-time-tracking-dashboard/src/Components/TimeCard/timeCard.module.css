@@ -25,6 +25,22 @@
 }
 
 .playBg {
-    background-color: (195, 74%, 62%);
+    background-color: hsl(195, 74%, 62%);
+}
+
+.studyBg {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exerciseBg {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.socialBg {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfCareBg {
+    background-color:  hsl(43, 84%, 65%);
 }
 
