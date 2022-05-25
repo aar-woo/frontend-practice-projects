@@ -20,10 +20,8 @@ export default function TimeCard(props) {
     const icon = icons[category]
     const background = category + 'Bg';
     if (category === 'selfCare') {
-        console.log('is self')
         category = 'self Care';
     }
-    console.log('category', category)
 
     return (
         <div className="mt-4">
