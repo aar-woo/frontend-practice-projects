@@ -22,7 +22,7 @@ export default function TimeCard(props) {
     let {bg, category} = props;
     const icon = icons[category]
     const background = category + 'Bg';
-    const categoryHoursObj = data[category];
+    const categoryHoursObj = data[category ];
     console.log(categoryHoursObj)
     if (category === 'selfCare') {
         category = 'self Care';
@@ -37,11 +37,11 @@ export default function TimeCard(props) {
                 <div className={`${styles.cardData} row align-items-center px-2`}>
                     <div className="col-5 d-flex flex-column align-items-start text-white">
                         <h5>{category[0].toUpperCase() + category.substring(1)}</h5>
-                        <h1 className="fw-normal">32hrs</h1>
+                        <h1 className="fw-normal">{`${categoryHoursObj.week}hrs`}</h1>
                     </div>
                     <div className="col-7 d-flex flex-column align-items-end">
                         <a><img src={ellipsis} className="py-3"></img></a>
-                        <p>Last Week - 36hrs</p>
+                        <p>{`Last Week - ${categoryHoursObj.lastWeek}hrs`}</p>
                     </div>
                 </div>  
             </div>
