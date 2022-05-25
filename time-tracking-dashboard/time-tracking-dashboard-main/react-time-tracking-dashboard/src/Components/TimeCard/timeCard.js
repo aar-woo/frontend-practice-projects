@@ -16,14 +16,13 @@ const icons = {
     'study': studyIcon,
     'exercise': exerciseIcon
 }
-console.log(data)
 
 export default function TimeCard(props) {
     let {bg, category} = props;
     const icon = icons[category]
     const background = category + 'Bg';
     const categoryHoursObj = data[category ];
-    console.log(categoryHoursObj)
+
     if (category === 'selfCare') {
         category = 'self Care';
     }

@@ -1,6 +1,8 @@
 import JeremyProf from "../../images/image-jeremy.png";
 import styles from './profileCard.module.css';
-export default function ProfileCard() {
+export default function ProfileCard(props) {
+    const {handleInterval} = props;
+
     return (
         <div className={styles.profCard}>
             <div className={`${styles.profBg} row w-100 m-0`}>
@@ -13,10 +15,16 @@ export default function ProfileCard() {
                 </div>
             </div>
             <div className={`${styles.intervals} row align-items-center`}>
-                <ul className="list-unstyled m-0 d-flex justify-content-around align-items-center">
-                    <li>Daily</li>
-                    <li>Weekly</li>
-                    <li>Montly</li>
+                <ul className="list-unstyled m-0 d-flex justify-content-around align-items-center" onClick={handleInterval}>
+                    <a href="">
+                        <li value="daily">Daily</li>
+                    </a>
+                    <a href="" >
+                        <li value="weekly">Weekly</li>
+                    </a>
+                    <a href="" >
+                        <li value="monthly">Montly</li>
+                    </a>
                 </ul>
             </div>
         </div>
