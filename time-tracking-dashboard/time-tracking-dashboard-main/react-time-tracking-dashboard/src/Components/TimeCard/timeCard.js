@@ -6,7 +6,7 @@ import socialIcon from '../../images/icon-social.svg';
 import studyIcon from '../../images/icon-study.svg';
 import exerciseIcon from '../../images/icon-exercise.svg';
 import ellipsis from '../../images/icon-ellipsis.svg';
-
+import data from '../../data.js'
 const icons = {
     'work': workIcon,
     'play': playIcon,
