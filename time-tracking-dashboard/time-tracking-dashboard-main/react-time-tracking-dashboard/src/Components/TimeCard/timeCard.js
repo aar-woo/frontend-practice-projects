@@ -34,12 +34,12 @@ export default function TimeCard(props) {
                     <img src={icon} className={`${styles.categoryIcon} `}/> 
                 </div>
                 <div className={`${styles.cardData} row align-items-center px-2`}>
-                    <div className="col-5 d-flex flex-column align-items-start text-white">
+                    <div className="col-12 d-flex align-self-end justify-content-between text-white align-items-end">
                         <h5>{category[0].toUpperCase() + category.substring(1)}</h5>
-                        <h1 className="fw-normal">{`${categoryHoursObj.week}hrs`}</h1>
-                    </div>
-                    <div className="col-7 d-flex flex-column align-items-end">
                         <a><img src={ellipsis} className="py-3"></img></a>
+                    </div>
+                    <div className="col-12 d-flex align-self-start justify-content-between">
+                        <h1 className="fw-normal text-start">{`${categoryHoursObj.week}hrs`}</h1>
                         <p>{`Last Week - ${categoryHoursObj.lastWeek}hrs`}</p>
                     </div>
                 </div>  
