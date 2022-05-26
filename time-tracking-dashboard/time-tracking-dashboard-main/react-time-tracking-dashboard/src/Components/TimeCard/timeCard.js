@@ -28,7 +28,7 @@ export default function TimeCard(props) {
     }
 
     return (
-        <div className="mt-4">
+        <div className="mt-4 mt-lg-0 col-lg-4 px-lg-3">
             <div className={`${styles[background]} ${styles.timeCardBg} container m-0`}>
                 <div className="col-12 d-flex justify-content-end">
                     <img src={icon} className={`${styles.categoryIcon} `}/> 

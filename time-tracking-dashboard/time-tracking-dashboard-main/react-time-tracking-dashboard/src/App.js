@@ -15,14 +15,20 @@ function App() {
   }
 
   return (
-    <div className="App container-fluid">
-      <ProfileCard handleInterval={changeInterval} />
-      <TimeCard category="work" />
-      <TimeCard category="play" />
-      <TimeCard category="study" />
-      <TimeCard category="exercise" />
-      <TimeCard category="social" />
-      <TimeCard category="selfCare" />
+    <div className="App">
+      <div className='container d-lg-flex flex-row flex-wrap'>
+        <div className='col-lg-3'>
+          <ProfileCard handleInterval={changeInterval} />
+        </div>
+        <div className='col-lg-8 d-lg-flex flex-wrap'> 
+          <TimeCard category="work" />
+          <TimeCard category="play" />
+          <TimeCard category="study" />
+          <TimeCard category="exercise" />
+          <TimeCard category="social" />
+          <TimeCard category="selfCare" />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 .profCard {
     background-color: hsl(235, 46%, 20%);
     color: rgba(255, 255, 255, 0.659);
-    width: 100%;
     border-radius: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -15,4 +14,13 @@
     height: 4rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 992px) { 
+    .intervals {
+        height: 9rem;
+    }
+    .intervals a {
+        padding: 0.5rem;
+    }
 }
