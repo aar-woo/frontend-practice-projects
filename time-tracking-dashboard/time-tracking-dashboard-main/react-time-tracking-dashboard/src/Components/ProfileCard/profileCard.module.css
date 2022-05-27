@@ -18,9 +18,13 @@
 
 @media (min-width: 992px) { 
     .intervals {
-        height: 9rem;
+        height: 8.5rem
     }
     .intervals a {
         padding: 0.5rem;
+    }
+
+    .profCard {
+        height: 100%;
     }
 }
