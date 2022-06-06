@@ -21,12 +21,12 @@ function App() {
           <ProfileCard handleInterval={changeInterval} currInterval={interval}/>
         </div>
         <div className='col-lg-8 d-lg-flex flex-wrap align-content-between'> 
-          <TimeCard category="work"/>
-          <TimeCard category="play" />
-          <TimeCard category="study" />
-          <TimeCard category="exercise" />
-          <TimeCard category="social" />
-          <TimeCard category="selfCare" />
+          <TimeCard category="work" currInterval={interval} />
+          <TimeCard category="play" currInterval={interval} />
+          <TimeCard category="study" currInterval={interval} />
+          <TimeCard category="exercise" currInterval={interval} />
+          <TimeCard category="social" currInterval={interval} />
+          <TimeCard category="selfCare" currInterval={interval} />
         </div>
       </div>
     </div>

@@ -18,10 +18,17 @@ const icons = {
 }
 
 export default function TimeCard(props) {
-    let {bg, category} = props;
+    let {category, currInterval} = props;
     const icon = icons[category]
     const background = category + 'Bg';
-    const categoryHoursObj = data[category ];
+    const categoryHoursObj = data[category];
+
+    const intervalObj = {
+        'daily': 'day',
+        'weekly': 'week',
+        'monthly': 'month'
+    }
+    const interval = data[category][intervalObj[currInterval]];
 
     if (category === 'selfCare') {
         category = 'self Care';
@@ -39,7 +46,7 @@ export default function TimeCard(props) {
                         <a><img src={ellipsis} className="py-3"></img></a>
                     </div>
                     <div className="col-12 d-flex align-self-start justify-content-between flex-lg-column">
-                        <h1 className="fw-normal text-start">{`${categoryHoursObj.week}hrs`}</h1>
+                        <h1 className="fw-normal text-start">{`${interval}hrs`}</h1>
                         <p className='text-lg-start'>{`Last Week - ${categoryHoursObj.lastWeek}hrs`}</p>
                     </div>
                 </div>  

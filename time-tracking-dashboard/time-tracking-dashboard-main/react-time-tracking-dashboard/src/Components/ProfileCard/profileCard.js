@@ -34,7 +34,7 @@ export default function ProfileCard(props) {
                         <li value="weekly">Weekly</li>
                     </a>
                     <a href="" >
-                        <li value="monthly">Montly</li>
+                        <li value="monthly">Monthly</li>
                     </a>
                 </ul>
             </div>
