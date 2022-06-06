@@ -1,0 +1,54 @@
+.timeCardBg {
+    height: 11rem;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.categoryIcon {
+    height: 5rem;
+    width: auto;
+    object-position: 0 -10px;
+}
+
+.cardData {
+    height: 8.5rem;
+    color: rgba(255, 255, 255, 0.659);
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    bottom: 2.5rem;
+    border-radius: 15px;
+}
+
+.workBg {
+    background-color: hsl(15, 100%, 70%);
+
+}
+
+.playBg {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.studyBg {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exerciseBg {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.socialBg {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfCareBg {
+    background-color:  hsl(43, 84%, 65%);
+}
+
+@media (min-width: 992px) { 
+    .timeCardBg {
+        /* height: 100%; */
+    }
+    .cardData {
+      
+    }
+}
