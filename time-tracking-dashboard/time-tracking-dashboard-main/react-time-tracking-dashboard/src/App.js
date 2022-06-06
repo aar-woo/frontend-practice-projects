@@ -16,9 +16,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className='container d-lg-flex flex-row flex-wrap p-2'>
+      <div className='container d-lg-flex flex-row flex-wrap p-2 justify-content-center'>
         <div className='col-lg-3'>
-          <ProfileCard handleInterval={changeInterval} />
+          <ProfileCard handleInterval={changeInterval} currInterval={interval}/>
         </div>
         <div className='col-lg-8 d-lg-flex flex-wrap align-content-between'> 
           <TimeCard category="work"/>

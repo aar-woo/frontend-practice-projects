@@ -1,7 +1,18 @@
 import JeremyProf from "../../images/image-jeremy.png";
 import styles from './profileCard.module.css';
 export default function ProfileCard(props) {
-    const {handleInterval} = props;
+    const {handleInterval, currInterval} = props;
+    
+    const intervals = document.querySelectorAll('li');
+
+    for (let i = 0; i < intervals.length; i++) {
+        if (intervals[i].getAttribute('value') === currInterval) {
+            console.log(intervals[i])
+            intervals[i].className = 'text-white'
+        } else {
+            intervals[i].className = 'text-inherit'
+        }
+    }
 
     return (
         <div className={`${styles.profCard}`}>
