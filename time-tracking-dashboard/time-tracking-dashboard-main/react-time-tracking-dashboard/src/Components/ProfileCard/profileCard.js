@@ -7,7 +7,6 @@ export default function ProfileCard(props) {
 
     for (let i = 0; i < intervals.length; i++) {
         if (intervals[i].getAttribute('value') === currInterval) {
-            console.log(intervals[i])
             intervals[i].className = 'text-white'
         } else {
             intervals[i].className = 'text-inherit'
@@ -31,7 +30,7 @@ export default function ProfileCard(props) {
                         <li value="daily">Daily</li>
                     </a>
                     <a href="" >
-                        <li value="weekly">Weekly</li>
+                        <li value="weekly" className="text-white">Weekly</li>
                     </a>
                     <a href="" >
                         <li value="monthly">Monthly</li>
