@@ -43,12 +43,3 @@
 .selfCareBg {
     background-color:  hsl(43, 84%, 65%);
 }
-
-@media (min-width: 992px) { 
-    .timeCardBg {
-        /* height: 100%; */
-    }
-    .cardData {
-      
-    }
-}
