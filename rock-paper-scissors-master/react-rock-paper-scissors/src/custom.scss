@@ -1,0 +1,7 @@
+$border-color: hsl(217, 16%, 45%);
+
+$custom-colors: (
+    "dark-grey": hsl(229, 25%, 31%)
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
