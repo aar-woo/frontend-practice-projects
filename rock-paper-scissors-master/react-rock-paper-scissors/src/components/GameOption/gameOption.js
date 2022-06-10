@@ -1,4 +1,4 @@
-import rockIcon from '../../../public/images/icon-rock'
+import rockIcon from '../../images/icon-rock.svg';
 
 export default function GameOption(props) {
     return (
