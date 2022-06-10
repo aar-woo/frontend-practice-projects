@@ -5,11 +5,9 @@
 
 .scoreNum {
     color: hsl(229, 25%, 31%);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
-/* .headerOutline {
-    border-color: hsl(217, 16%, 45%) !important;
-} */
+
 
