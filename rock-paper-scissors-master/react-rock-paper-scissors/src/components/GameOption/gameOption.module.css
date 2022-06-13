@@ -1,3 +1,9 @@
+.innerCircle {
+    height: 6.5em;
+    width: 6.5rem;
+    box-shadow: inset 0px 9px 0px -3px rgba(0,0,0,0.25); 
+}
+
 .rockOuterCircle{
     height: 8.5rem;
     width: 8.5rem;
@@ -5,8 +11,16 @@
     box-shadow: inset 0px -10px 0px -3px rgba(0,0,0,0.35); 
 }
 
-.rockInnerCircle {
-    height: 6.5em;
-    width: 6.5rem;
-    box-shadow: inset 0px 9px 0px -3px rgba(0,0,0,0.25); 
+.paperOuterCircle{
+    height: 8.5rem;
+    width: 8.5rem;
+    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));  
+    box-shadow: inset 0px -10px 0px -3px rgba(0,0,0,0.35); 
+}
+
+.scissorsOuterCircle{
+    height: 8.5rem;
+    width: 8.5rem;
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));  
+    box-shadow: inset 0px -10px 0px -3px rgba(0,0,0,0.35); 
 }

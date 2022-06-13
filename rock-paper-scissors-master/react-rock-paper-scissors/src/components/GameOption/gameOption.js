@@ -15,7 +15,7 @@ export default function GameOption(props) {
     const optionClass = `${hand}Outer`
     return (
         <div className={`${styles[`${hand}OuterCircle`]} border-none rounded-circle d-flex justify-content-center align-items-center`}>
-            <div className={`${styles[`${hand}InnerCircle`]} bg-white border-none rounded-circle d-flex justify-content-center align-items-center`}>
+            <div className={`${styles.innerCircle} bg-white border-none rounded-circle d-flex justify-content-center align-items-center`}>
                 <img src={icon} className="w-40 h-40"/>
             </div>
         </div>

@@ -8,7 +8,8 @@ function App() {
     <div className="App bg-primary.bg-gradient">
       <Header />
       <GameOption hand='rock'/>
-
+      <GameOption hand='paper'/>
+      <GameOption hand='scissors'/>    
     </div>
   );
 }
