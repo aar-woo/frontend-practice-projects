@@ -1,10 +1,13 @@
 .optionOuterCircle{
     height: 9.5rem;
     width: 9.5rem;
-    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));   
+    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));  
+    box-shadow: inset 0px -10px 0px -3px rgba(0,0,0,0.35); 
 }
 
 .optionInnerCircle {
     height: 7rem;
     width: 7rem;
+    box-shadow: inset 0px 9px 0px -3px rgba(0,0,0,0.25); 
+
 }
