@@ -1,7 +1,7 @@
 import styles from './header.module.css';
 export default function Header(props) {
     return (
-        <div className={`${styles.headerOutline} row m-4 p-2 d-flex justify-content-between border border-3 rounded`}>
+        <div className="row p-2 d-flex justify-content-between border border-3 rounded">
             <div className="col-4 text-start d-flex align-items-center"> 
                 <h3 className="mb-0 lh-base text-white fw-bold">ROCK PAPER SCISSORS</h3>
             </div>
