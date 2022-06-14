@@ -7,9 +7,17 @@ function App() {
   return (
     <div className="App bg-primary.bg-gradient">
       <Header />
-      <GameOption hand='rock'/>
-      <GameOption hand='paper'/>
-      <GameOption hand='scissors'/>    
+      <div className="row">
+        <div className="col-12 d-flex justify-content-evenly">
+          <GameOption hand='paper'/>
+          <GameOption hand='scissors'/>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12 d-flex justify-content-center">
+          <GameOption hand='rock'/>
+        </div>
+      </div>
     </div>
   );
 }

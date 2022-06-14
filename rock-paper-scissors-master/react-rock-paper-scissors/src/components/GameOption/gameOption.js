@@ -11,8 +11,7 @@ export default function GameOption(props) {
         scissors: scissorsIcon
     }
     const icon = handToIconObj[hand]
-
-    const optionClass = `${hand}Outer`
+    
     return (
         <div className={`${styles[`${hand}OuterCircle`]} border-none rounded-circle d-flex justify-content-center align-items-center`}>
             <div className={`${styles.innerCircle} bg-white border-none rounded-circle d-flex justify-content-center align-items-center`}>
