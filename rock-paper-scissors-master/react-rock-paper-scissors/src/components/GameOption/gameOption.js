@@ -16,15 +16,15 @@ export default function GameOption(props) {
 
     if (mode === 'rules') {
         outerCircleClass = 'rulesOuterCircle';
-        innerCircleClass = 'rulesInnerCricle';
+        innerCircleClass = 'rulesInnerCircle';
     }
     
     const icon = handToIconObj[hand]
 
     return (
         <div className={`${styles[outerCircleClass]} border-none rounded-circle d-flex justify-content-center align-items-center`}>
-            <div className={`${styles[innerCircleClass]} bg-white border-none rounded-circle d-flex justify-content-center align-items-center`}>
-                <img src={icon} className="w-40 h-40"/>
+            <div className={`${styles[innerCircleClass]} border-none rounded-circle d-flex justify-content-center align-items-center`}>
+                <img src={icon} className="w-50"/>
             </div>
         </div>
        
