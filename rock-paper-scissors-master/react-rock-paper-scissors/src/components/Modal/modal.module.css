@@ -1,0 +1,13 @@
+.modal {
+    color: hsl(229, 25%, 31%);
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+}
+
+.modalTitle {
+    margin-top: 6rem;
+    font-size: 2.3rem;
+}
