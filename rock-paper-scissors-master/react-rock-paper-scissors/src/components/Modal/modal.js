@@ -14,7 +14,7 @@ export default function Modal(props) {
         <div className={modalClass}>
             <h1 className={`${styles.modalTitle} fw-bold`}>RULES</h1>
             <img src={rulesImg} className=''/>
-            <button onClick={toggleModal}><img src={closeIcon} className={styles.closeIcon} /></button>
+            <a onClick={toggleModal} className=''><img src={closeIcon} className={styles.closeIcon} /></a>
         </div>
     )
 }
