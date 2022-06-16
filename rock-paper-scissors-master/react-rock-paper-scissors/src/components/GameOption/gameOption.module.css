@@ -25,15 +25,3 @@
     background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));  
     box-shadow: inset 0px -10px 0px -3px rgba(0,0,0,0.35); 
 }
-
-.rulesOuterCircle {
-    height: 7.5rem;
-    width: 7.5rem;
-    background-color: rgb(170, 174, 188);  
-}
-
-.rulesInnerCircle {
-    height: 5.5rem;
-    width: 5.5rem;
-    background-color: rgb(220, 222, 235)
-}
