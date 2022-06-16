@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Options />
         <Button type='rules' />
-        {/* <Modal /> */}
+        <Modal />
     </div>
   );
 }
