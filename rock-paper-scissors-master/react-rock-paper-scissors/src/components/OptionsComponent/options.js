@@ -5,10 +5,6 @@ import styles from './options.module.css';
 export default function Options(props) {
     const {setUserHand} = props;
 
-    // const gameHands = document.querySelectorAll('a');
-
-    
-
     return (
         <>
             <div className={`${styles.triangle}`}  onClick={setUserHand}>

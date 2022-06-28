@@ -8,7 +8,7 @@ export default function GamePlay(props) {
         <div className={styles.gameContainer}>
             <div className='row d-flex justify-content-center'>
                 <div className='col-5 d-flex flex-column align-items-center'>
-                    <GameOption hand='rock' />
+                    <GameOption hand={userHand} />
                     <p className='text-white my-4'>YOU PICKED</p>
                 </div>
                 <div className='col-5 d-flex flex-column align-items-center'>
