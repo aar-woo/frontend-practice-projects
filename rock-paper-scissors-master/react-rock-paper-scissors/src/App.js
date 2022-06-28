@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import './App.css';
 import Header from './components/Header/header';
 import Options from './components/OptionsComponent/options';
@@ -9,6 +9,7 @@ import GamePlay from './components/GamePlay/gamePlay';
 function App() {
   const [modalIsOpen, setModalState] = useState(false);
   const [userHand, setUserHand] = useState('');
+  const [compHand, setCompHand] = useState('');
 
   const toggleModal = function() {
     setModalState(!modalIsOpen);
@@ -20,9 +21,16 @@ function App() {
     setUserHand(selectedHand)
   }
 
+  useEffect(() => {
+    const hands = ['rock', 'paper', 'scissors'];
+    const randNum = Math.floor(Math.random() * (3))
+    console.log('randNum', randNum);
+    setCompHand(hands[randNum]);
+  }, [userHand])
+
   let view;
 
-  userHand ? view = <GamePlay userHand={userHand} /> : view = <Options setUserHand={setHand} />
+  userHand ? view = <GamePlay userHand={userHand} compHand={compHand} /> : view = <Options setUserHand={setHand} />
   
 
   return (

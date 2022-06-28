@@ -2,7 +2,7 @@ import styles from './gamePlay.module.css';
 import GameOption from '../GameOption/gameOption';
 
 export default function GamePlay(props) {
-    const { userHand, compHand} = props;
+    const { userHand, compHand } = props;
 
     return (
         <div className={styles.gameContainer}>
@@ -12,7 +12,7 @@ export default function GamePlay(props) {
                     <p className='text-white my-4'>YOU PICKED</p>
                 </div>
                 <div className='col-5 d-flex flex-column align-items-center'>
-                    <GameOption hand='scissors' />
+                    <GameOption hand={compHand} />
                     <p className='text-white my-4'>THE HOUSE PICKED</p>
                 </div>
             </div>
