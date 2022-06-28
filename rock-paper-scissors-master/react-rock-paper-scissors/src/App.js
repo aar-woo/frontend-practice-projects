@@ -8,21 +8,31 @@ import GamePlay from './components/GamePlay/gamePlay';
 
 function App() {
   const [modalIsOpen, setModalState] = useState(false);
-  const [userHand, setUserHand] = useState();
+  const [userHand, setUserHand] = useState('');
 
   const toggleModal = function() {
     setModalState(!modalIsOpen);
   }
 
-  const setHand = function(hand) {
-    setUserHand(hand)
+  const setHand = (event) => {
+    const option = event.target.closest('a');
+    const selectedHand = option.getAttribute('value');
+    setUserHand(selectedHand)
+  }
+
+  let view = <Options setUserHand={setHand} />
+
+  if (userHand) {
+    view = <GamePlay userHand={userHand} />
   }
 
   return (
+    
     <div className="App bg-primary.bg-gradient p-3 py-4 d-flex flex-column">
         <Header />
-        {/* <Options /> */}
-        <GamePlay />
+        {/* <Options setUserhand={setHand} />
+        <GamePlay userHand={userHand} /> */}
+        {view}
         <Button type='rules' toggleModal={toggleModal} />
         <Modal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
     </div>

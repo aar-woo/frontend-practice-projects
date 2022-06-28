@@ -2,19 +2,31 @@ import triangleBg from '../../images/bg-triangle.svg'
 import GameOption from '../GameOption/gameOption'
 import styles from './options.module.css';
 
-export default function Options() {
+export default function Options(props) {
+    const {setUserHand} = props;
+
+    // const gameHands = document.querySelectorAll('a');
+
+    
+
     return (
         <>
-            <div className={`${styles.triangle}`}>
-                <div className={styles.paperPosition}>
-                    <GameOption hand="paper"/>
+            <div className={`${styles.triangle}`}  onClick={setUserHand}>
+                <div className={styles.paperPosition} >
+                    <a value='paper'>
+                        <GameOption hand="paper"/>
+                    </a>
                 </div>
                 <div className={styles.scissorsPosition}>
-                    <GameOption hand="scissors" />
+                    <a value="scissors">
+                        <GameOption hand="scissors" />
+                    </a>
                 </div>
               
                 <div className={styles.rockPosition}>
-                    <GameOption hand="rock" />
+                    <a value="rock">
+                        <GameOption hand="rock" />
+                    </a>
                 </div>
             </div>
         </>
