@@ -20,18 +20,14 @@ function App() {
     setUserHand(selectedHand)
   }
 
-  let view = <Options setUserHand={setHand} />
+  let view;
 
-  if (userHand) {
-    view = <GamePlay userHand={userHand} />
-  }
+  userHand ? view = <GamePlay userHand={userHand} /> : view = <Options setUserHand={setHand} />
+  
 
   return (
-    
     <div className="App bg-primary.bg-gradient p-3 py-4 d-flex flex-column">
         <Header />
-        {/* <Options setUserhand={setHand} />
-        <GamePlay userHand={userHand} /> */}
         {view}
         <Button type='rules' toggleModal={toggleModal} />
         <Modal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
