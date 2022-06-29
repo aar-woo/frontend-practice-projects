@@ -18,7 +18,6 @@ function App() {
   const setHand = (event) => {
     const option = event.target.closest('a');
     const selectedHand = option.getAttribute('value');
-    console.log('value', selectedHand)
     setUserHand(selectedHand)
   }
 
