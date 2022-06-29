@@ -1,8 +1,9 @@
 import styles from './gamePlay.module.css';
 import GameOption from '../GameOption/gameOption';
+import Button from '../Button/button';
 
 export default function GamePlay(props) {
-    const { userHand, compHand } = props;
+    const { userHand, compHand, setUserHand } = props;
 
     return (
         <div className={styles.gameContainer}>
@@ -15,6 +16,8 @@ export default function GamePlay(props) {
                     <GameOption hand={compHand} />
                     <p className='text-white my-4'>THE HOUSE PICKED</p>
                 </div>
+                <h1 className={`${styles.outcome} text-white`}>YOU LOSE</h1>
+                <Button type='play again' handleClick={setUserHand} />
             </div>
         </div>
     )

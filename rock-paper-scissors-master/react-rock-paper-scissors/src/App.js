@@ -18,27 +18,27 @@ function App() {
   const setHand = (event) => {
     const option = event.target.closest('a');
     const selectedHand = option.getAttribute('value');
+    console.log('value', selectedHand)
     setUserHand(selectedHand)
   }
 
   useEffect(() => {
     const hands = ['rock', 'paper', 'scissors'];
     const randNum = Math.floor(Math.random() * (3))
-    console.log('randNum', randNum);
     setCompHand(hands[randNum]);
   }, [userHand])
 
   let view;
 
-  userHand ? view = <GamePlay userHand={userHand} compHand={compHand} /> : view = <Options setUserHand={setHand} />
+  userHand ? view = <GamePlay userHand={userHand} compHand={compHand} setUserHand={setHand} /> : view = <Options setUserHand={setHand} />
   
 
   return (
     <div className="App bg-primary.bg-gradient p-3 py-4 d-flex flex-column">
         <Header />
         {view}
-        <Button type='rules' toggleModal={toggleModal} />
-        <Modal modalIsOpen={modalIsOpen} toggleModal={toggleModal} />
+        <Button type='rules' handleClick={toggleModal} />
+        <Modal modalIsOpen={modalIsOpen} handleClick={toggleModal} />
     </div>
   );
 }

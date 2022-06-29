@@ -9,3 +9,9 @@
     left: 50%;
     transform: translate(-50%);
 }
+
+.playAgain {
+    width: 14rem;
+    height: 3rem;
+    letter-spacing: 0.15rem;
+}
