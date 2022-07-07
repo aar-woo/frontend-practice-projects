@@ -1,0 +1,13 @@
+.score {
+    height: 5rem;
+    color: hsl(229, 64%, 46%);
+}
+
+.scoreNum {
+    color: hsl(229, 25%, 31%);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+

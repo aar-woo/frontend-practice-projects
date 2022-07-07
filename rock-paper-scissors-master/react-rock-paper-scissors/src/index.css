@@ -1,0 +1,7 @@
+body, html {
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%))
+}
